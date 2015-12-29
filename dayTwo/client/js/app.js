@@ -1,0 +1,10 @@
+angular.module('dayTwo',['ui.router','appControllers','pdf'])
+.config(function($stateProvider,$urlRouterProvider){
+$stateProvider
+.state('Home',{
+	url:'/home',
+	templateUrl:'views/home.html',
+	controller:'homeCtrl'
+});
+$urlRouterProvider.otherwise('/home');
+});

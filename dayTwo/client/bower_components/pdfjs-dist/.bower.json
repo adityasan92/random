@@ -1,0 +1,24 @@
+{
+  "name": "pdfjs-dist",
+  "version": "1.0.1194",
+  "main": [
+    "build/pdf.js",
+    "build/pdf.worker.js"
+  ],
+  "ignore": [],
+  "keywords": [
+    "Mozilla",
+    "pdf",
+    "pdf.js"
+  ],
+  "homepage": "https://github.com/mozilla/pdfjs-dist",
+  "_release": "1.0.1194",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1194",
+    "commit": "c8e217f0a5601f7918393d51c4a6b2e8d5d9ca99"
+  },
+  "_source": "git://github.com/mozilla/pdfjs-dist.git",
+  "_target": "1.0.1194",
+  "_originalSource": "pdfjs-dist"
+}
