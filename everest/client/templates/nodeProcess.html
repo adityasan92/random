@@ -1,0 +1,20 @@
+<style>
+
+.table{
+  background-color: rgba(255, 255, 255, 0.79) !important;
+}
+</style>
+<div class="background">
+  <div class = "row" style="padding:20px">
+  <table class="table table-bordered" bgcolor="#00FF00">
+    <th ng-repeat="header in headers">
+      {{header}}
+    </th>
+    <tr ng-repeat="row in rows">
+      <td ng-repeat="column in row track by $index" ng-if="column">
+          {{column}}
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
