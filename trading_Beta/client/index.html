@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+   		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    	<title></title>
+        <script src="/bower_components/angular/angular.js"></script> 
+        <script src="/bower_components/angular-route/angular-route.js"></script>
+        <script src="/bower_components/angular-resource/angular-resource.js"></script>
+        <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+        <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    	<!-- your app's js -->
+    	<script src="js/app.js"></script>
+        
+    	<!-- Controllers -->
+    	<script src="/js/controllers/main.js"></script>
+
+        <!-- css -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/startBootstrap.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	</head>
+	<body ng-app="megaTradingApp">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid" ng-controller="homeCtrl">
+        
+                <div class="navbar-header" ng-init="navbarCollapsed=true">
+                  <button type="button" class="navbar-toggle collapsed"  ng-click="navbarCollapsed = !navbarCollapsed" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#/home"><strong><font color="black">MEGA DAY TRADER</font></strong></a>
+                </div>
+
+        
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+
+        
+                  </ul>
+             
+                  <ul class="nav navbar-nav navbar-right">
+                    <button type="button" class="btn btn-default navbar-btn" ng-click="logIn()"><font color="black"><b>Log In</b></font></button>
+                    <button type="button" class="btn btn-default navbar-btn" ng-click="signUp()"><font color="black"><b>Sign Up</b></font></button>
+                    <button type="button" class="btn btn-default navbar-btn" ng-click="demo()"><font color="black"><b>Demo</b></font></button>
+                    <button type="button" class="btn btn-default navbar-btn"><font color="black"><b>Tutorial</b></font></button>
+                    &nbsp;
+                  </ul>
+
+                </div>
+
+                <div collapse="navbarCollapsed">
+             
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" ng-click="logIn()">Log In</a></li>
+                    <li><a href="#" ng-click="signUp()">Sign Up</a></li>
+                    <li><a href="#" ng-click="demo()">Demo</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                  </ul>
+                            
+                </div>
+            </div>
+        </nav>
+    <div ui-view id="myCarousel" class="carousel slide"></div>
+</body>
+</html>

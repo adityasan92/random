@@ -1,0 +1,14 @@
+{
+  "name": "megaTrading_website",
+  "version": "1.0.0",
+  "description": "A trading platform",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aditya Sanghi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
