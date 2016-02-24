@@ -4,7 +4,7 @@
 var readability = require("node-readability"),
     sanitizer = require("sanitizer");
 
-scraper("https://en.wikipedia.org/wiki/Star_Wars:_The_Force_Awakens", function (data) {
+scraper("https://www.technologyreview.com/s/600762/robot-art-raises-questions-about-human-creativity/#/set/id/600857/", function (data) {
     console.log("# %s #\n\n%s\n\n---", data.title, data.contents);
 });
 
